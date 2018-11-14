@@ -1,0 +1,115 @@
+/*
+Anchor Styling Notes:
+- Global Anchor Tag
+- Social Links Are Styled Here
+- Nav Links Are Styled Here
+- Skill Links Are Defined Here
+- If An Anchor Tag Doesnt Have A Stlye By Default It Will Use The Proprties  Defined
+*/
+
+//By Default Its Always Black, But If It Has An ID Or Class Then This Wont Be Applicable
+a {
+  color: $black;
+
+  //On Hover
+  &:hover {
+    color:  $black;
+  }
+}
+
+//Social Links With Icons (Footer Section)
+.social-links {
+  li{
+    padding: 5px;
+    a {
+      font-size: 25px;
+      padding-top: 3px;
+      display: block;
+      width: 40px;
+      height: 40px;
+     @include border-radius (100%); //Background Mixin
+     color: $white;
+
+      //Anchor States
+      //Hover, Focus, Active
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $yellow;
+      }
+    }
+  }
+}
+
+//mainNav Links
+//Links Nesting To Show Specificity
+.navbar-nav {
+  .nav-item {
+    .nav-link {
+      color: $white;
+      &.active,
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}
+
+
+/*
+Icon Styling Notes:
+- The Icons Have A Link So They Are Technicaly Links Since They Go Somewhere
+- Icon Effect Which Is Then Inherited To #GULP, #NODE AND #SASS
+- Icon Effect Also Increases Font-Size , Reduces Amount Of Code
+*/
+
+//This Can Be Extended To Classes Or ID, All You Need T o Do Is @extend $[name]
+%Icon-Effect {
+  position: relative;
+  bottom: 10px; // Moves Up (10px From Bottom )
+  @include increaseSize (1.2); //Mixin To Transform Text, Defined Here Since All Icons Use It
+}
+
+//Gulp Icon
+#GULP {
+  color: $red; //Icon Goes Red
+
+  //On Hover
+  &:hover {
+    @extend %Icon-Effect ; //Extends The Icon Effect Which Was Defined In This File
+    color: darken( $red, 10% ); //Built In SASS Function To Darken Colour
+  }
+}
+
+//Node Icon
+#NODE {
+  color: $green; //Icon Goes Green
+
+  //On Hover
+  &:hover {
+    @extend %Icon-Effect ; //Extends The Icon Effect Which Was Defined In This File
+    color: darken( $green, 10% );  //Built In SASS Function To Darken Colour
+  }
+}
+
+//SASS Icon
+#SASS {
+color: $pink; //Icon Goes Pink
+
+//On Hover
+&:hover {
+  @extend %Icon-Effect ; //Extends The Icon Effect Which Was Defined In This File
+  color: darken( $pink, 10% ); //Built In SASS Function To Darken Colour
+  }
+}
+
+//Preview Link Icons For Live And Github Link  (Font Awesome Icons)
+.preview-link,
+.github-link {
+
+  //On Hover
+  &:hover {
+    @include increaseSize (1.2);  //Mixin To Transform Text
+    @extend %Icon-Effect; //Extends The Postion Relative Attribute, Which Was Defined In This File
+  }
+}

@@ -1,0 +1,40 @@
+/*
+Button Styling
+- SASS Methods Are Used e.g. Lighten(), it well lightens the colour defined in the
+- Nesting Is Used To Demonstrate Specificity
+- Mixins Are Used To Reduce The Code From Being DRY
+*/
+
+
+//Default Styling For Buttons
+//Every Button Extends From The Default Properties
+%button{
+  @include border-radius (15px);  //Background Mixin With 1 Arguement
+  @include border (0px, none, none);  //Background Mixin With 1 Arguement
+  @include text-align (center); // Text Align Mixin With 1 Arguement
+  @include text-transform(uppercase); //Text Transfrom With 1 Arguement
+
+  //On Hover
+  &:hover {
+    @include button-hover(none, $white, pointer);
+  }
+}
+
+//Extends From Button, But Also Overrides The Button Default Mixin
+.landing-button,
+.contact-button {
+  @extend %button;
+  @include button-default (lighten($yellow, 5%), 25vw, 15px, $white, 10px); //Background Mixin With 5 Arguements - background color, width, padding, color and margin
+  font-size: 16pt;
+  font-weight: 800;
+}
+
+//At 767px Or Less Then....
+@media(max-width:767px) {
+  .contact-button,
+  .landing-button {
+    //Modifies Width And Margin
+    @include button-default (lighten($yellow, 5%), 60vw, 15px, $white, 10px); //Background Mixin With 5 Arguements - background color, width, padding, color and margin
+  }
+}
+

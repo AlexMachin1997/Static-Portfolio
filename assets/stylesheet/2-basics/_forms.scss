@@ -1,0 +1,50 @@
+/*
+Form Styling
+- Border Mixin Is Used For Valid And Invalid
+- Textarea Styling Using Global Tag
+- Input, Subject And Textarea Tag Has A Cursor Point To Show Its Clickable
+*/
+
+input {
+  cursor: auto;
+}
+
+#subject {
+  cursor: pointer;
+}
+
+textarea {
+  height: 180px;
+  @include border (0px, none, transparent); //Uses A Mixins With 3 Arguments
+
+  //On Hover
+  &:hover {
+    cursor: auto;
+  }
+}
+
+//Form Validation - Correct Input
+.valid{
+  @include border (2px, solid, $green); //Uses A Mixins With 3 Arguments
+}
+
+//Form Validation - Inoccrect Input
+.invalid {
+  @include border (2px, solid, $red); //Uses A Mixins With 3 Arguments
+}
+
+.g-recaptcha>div {
+  width: 100% !important;
+}
+
+.g-recaptcha iframe {
+  width: 100% !important;
+}
+
+
+//At 767px Or Less Then....
+@media(max-width:767px) {
+  textarea {
+    height: 100px;
+  }
+}

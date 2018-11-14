@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Keywords-->
+        <meta name="application-name" content="Alex Machin">
+
+        <meta name ="keywords" content="
+        Alex Machin, Front-End Development, Rotherham, South Yorkshire, Sheffield,
+        Web Development, Front-end Web Developer Portfolio, Website Design, Node, Node js,SASS, Gulp JS, Express, Bootstrap ,
+        Web App, Web Application, CSS, HTML, JS, Javascript"
+        />
+
+        <!-- Allows Googles Search Engine Crawlers  -->
+        <meta name ="robot" content="index,follow" /> <!-- All Search Engines -->
+        <meta name="googlebot" content="index,follow" /> <!-- Googles Search Engine -->
+
+        <!-- Meta Description , Appears In Search Engine Results -->
+        <meta name="description" content="Welcome to my portfolio website, Im a student and aspiring front-end developer. My website contains information about me, my various projects and how to contact me.">
+
+        <!-- Twitter Meta Card Data -->
+        <meta name="twitter:card" content="summary" /> <!-- Needs To Be Summary -->
+        <meta name="twitter:site" content="@AlexMachin97" /> <!-- Twitter Username  -->
+        <meta name="twitter:title" content="Alex Machin" /> <!-- Twitter Card Title -->
+        <meta name="twitter:description" content="Currently, I'm completing a degree in computing systems and development at @RotherhamColl. During my spare time i perfect my front-end development skill's." /><!-- Twitter Description -->
+        <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/962775964475445248/vHFE0-cG_400x400.jpg" /> <!-- Profile Link -->
+
+        <!-- Page Title -->
+        <title>Alex Machin </title>
+
+        <!-- Favicon Links To Images File Where The Ico File Is Located -->
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+        <!-- Resources For The Web site -->
+        <link rel="stylesheet" type="text/css" href="./stylesheet/APP.css">
+
+        <!-- Javascript Bundle  -->   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./scripts/menu.js"></script>
+        <script src="./scripts/validation.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.js"></script>
+
+        <!-- Fontawesome 5 CDN Link -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body id="top" data-spy="scroll" data-target="#mainNav">
+
+        <div class="container-fluid">
+
+        <div class="col-12">
+
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-font" id="mainNav">
+
+                <div class="container">
+
+                    <a class="navbar-brand js-scroll-trigger navbar-font" href="#top">Alex Machin</a>
+
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                    <ul class=" nav navbar-nav text-uppercase ml-auto" role="tablist">
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+        
+            <!-- -Typography Class -->
+            <h1 class="huge">
+                Alex Machin
+                </h1>
+        
+            <!-- -Typography Class -->
+            <h2 class="bigger">
+            Student and aspiring front-end developer
+            </h2>
+        
+            <!-- Find out more button -->
+            <a class="landing-button" href="#About">
+            Find out more
+            </a>
+        
+            </div>
+        </div>
+    </header>
+
+    <section id="About">
+        <div class="container">
+            <div class="row">
+
+            <div class="col-12">
+
+                <!-- Heading For Section -->
+                <h2>About </h2>
+                
+                <!-- Overview Of Myself  Part 1-->
+                <p>
+                Hello, my name is Alex Machin. I’m an aspiring front-end web developer, who is currently studying at Rotherham College.
+                </p>
+
+                <!-- Overview Of Myself  Part 2-->
+                <p>
+                My journey into web development started just over a year ago, since then I’ve enjoyed every moment of it.
+                Throughout the first year I spent majority of my time completing various courses on udemy and watching various YouTubers.
+                </p>
+
+                <!-- Overview Of Myself  Part 3-->
+                <p>
+                During this time I've picked up some of the best  web development skills, some of the them are displayed below.
+                </p>
+
+            </div>
+            </div>
+
+            <!-- Centers Text And Span Class-->
+            <div class="row ">
+
+            <!-- First Skill Section -->
+            <div class="col-md-12 col-sm-12 col-lg-4  portfolio-item">
+
+                <!-- Skill Image From Font-Awesome With A Link -->
+                <a href="https://gulpjs.com/">
+                <span class="fab fa-gulp fa-8x"  id="GULP"></span>
+                </a>
+
+                <!-- Skill Name -->
+                <h4>GULP JS</h4>
+
+                <!-- Description Of Skill -->
+                <p>
+                Gulp is a JavaScript based automation tool which starts my server, makes my files web ready, and reruns tasks when specified. I don’t know why I didn’t invest in gulp earlier.        </p>
+            </div>
+
+            <!-- Second Skill Section -->
+            <div class="col-md-12 col-sm-12 col-lg-4  portfolio-item">
+
+                <!-- Skill Image From Font-Awesome With A Link -->
+                <a href="https://sass-lang.com/">
+                <span class="fab fa-sass fa-8x"  id="SASS"> </span>
+                </a>
+
+                <!-- Skill Name -->
+                <h4>SASS</h4>
+
+                <!-- Description Of Skill -->
+                <p>
+                SASS enables me to optimise my stylesheet for perfection by allowing modules, mixins and variables to be used. Styling is now scalable and maintainable for all my current and future project.        
+                </p>
+
+                </div>
+
+            <!-- Third Section -->
+            <div class="col-md-12 col-sm-12 col-lg-4  portfolio-item">
+
+                <!-- Skill Image From Font-Awesome With A Link -->
+                <a href="https://nodejs.org/en/">
+                <span class="fab fa-node-js fa-8x"  id="NODE"></span>
+                </a>
+
+                <!-- Skill Name -->
+                <h4>Node.js</h4>
+
+                <!-- Description Of Skill -->
+                <p>
+                Node.js allows me to access the npm registry to access thousands of plugins developed to improve the functionality of a workflow or a project. Node is offically my favourite web development tool.
+                </p>
+
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Projects" >
+        <div class="container">
+
+            <!-- Overview Of Section-->
+            <div class="row">
+                <div class="col-12">
+                    <h2>Projects</h2>
+                    <p> Welcome to the projects section, some of my projects are displayed below.</p>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-4  project-item">
+
+                    <a href="https://yelpcampapp.herokuapp.com/">
+                        <img class="img-thumbnail image" src="./images/Yelpcamp.png" alt="Yelpcamp Application " data-toggle="tooltip" data-placement="top" title="Yelpcamp">
+                    </a>
+
+                    <div class="project-caption">                
+                        <h4>Yelpcamp</h4>
+                        <p>Yelpcamp is my first web application, its a mixture of front-end and back-end. Front-end takes advantage of Node.js whereas the back-end uses mongodb.</p>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="https://yelpcampapp.herokuapp.com/" class="project-link">
+                                    <i class="fas fa-link large preview-link"></i>
+                                    <p> Preview Link </p>
+                                </a>
+                            </div>
+
+                            <div class="col-6">
+                                <a href="https://github.com/AlexMachin1997/Yelpcamp" class="project-link">
+                                    <i class="fab fa-github large github-link"></i>
+                                    <p> Github </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-lg-4  project-item">
+
+                    <a href="http://www.induz.co.uk/">
+                        <img class="img-fluid image" src="./images/Induz.png" alt="Induz Static Website"  data-toggle="tooltip" data-placement="top" title="Induz">
+                    </a>
+
+                    <div class="project-caption">
+
+                        <h4>Induz</h4>
+
+                        <p>Induz was my first collabaritive which was created with Paul Thornley. The project was part of a redesign project for a small takeaway company in Bramley.</p>
+
+                        <div class="row">
+                            <div class="col-6">
+
+                                <a href="http://www.induz.co.uk/" class="project-link">
+                                    <i class="fas fa-link large preview-link"></i>
+                                    <p> Preview Link </p>
+                                </a>
+                            </div>
+
+                            <div class="col-6">
+
+                                <a href="https://github.com/AlexMachin1997/Yelpcamp" class="project-link">
+                                    <i class="fab fa-github large github-link"></i>
+                                    <p> Github </p>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-lg-4  project-item">
+
+                    <a href="https://alexmachin1997.github.io/Dribble-Homepage-Clone/">
+                        <img class="img-fluid image" src="./images/Dribble-Clone.png" alt="Dribble"  data-toggle="tooltip" data-placement="top" title="Dribble">
+                    </a>
+
+                    <div class="project-caption">
+                    
+                        <h4>Dribble</h4>
+
+                        <p>Dribble is a creative website where designers upload creative ideas, which developers can then create. To show my appreciation I recreated the site.</p>
+
+                        <div class="row">
+                            <div class="col-6">
+
+                                <a href="https://alexmachin1997.github.io/Dribble-Homepage-Clone/" class="project-link">
+                                    <i class="fas fa-link large preview-link"></i>
+                                    <p> Preview Link</p>
+                                </a>
+
+                            </div>
+
+                            <div class="col-6">
+                                <a href="https://github.com/AlexMachin1997/Dribble-Homepage-Clone" class="project-link">
+                                    <i class="fab fa-github large github-link"></i>
+                                    <p> Github</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <section id="Contact">
+        <div class="container">
+
+            <div class="row" id="Contact-Overview">
+                <div class="col-lg-12">
+
+                <h2>
+                    Contact Me
+                </h2>
+
+                <p>
+                    Feel free to contact me about a work opportunity or general enquiry.
+                </p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <form action="#" method="post" id="contactForm">
+                        <div class="row">
+
+                        <div class="col-md-6">
+
+                            <!-- Full Name Input -->
+                            <div class="form-group">
+                            <label for="name">Name </label>
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Your Name Goes Here  *"  required pattern="[a-zA-Z ]+" title="Only Characters And Spaces Are Accepted For The Full Name">
+                            </div>
+
+                            <!-- Email Input -->
+                            <div class="form-group">
+                            <label for="email">Email </label>
+                            <input class="form-control" id="email" name="email" type="email" placeholder="Your Email Goes Here  *" required pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" title="Make Sure Its A Valid Email">
+                            </div>
+
+                            <!-- Google Recaptcha -->
+                            <div class="form-group">
+                            <label for="recaptcha">Google Recaptcha</label>
+                            <div class="g-recaptcha form-control" id="recaptcha" data-sitekey="6LfbsU8UAAAAAPiJIcl0AeOewcgQKguVNMca8Znk " required></div>
+                            </div>
+                        </div>
+
+                        <!-- Subject Input  -->
+                        <div class="col-md-6">
+
+                            <label for="subject">Subject  </label>
+
+                            <div class="form-group">
+                            <select name="subject" class="form-control" id="subject" name="subject"  required>
+                                <option value="General">General</option>
+                                <option value="Oppurtunity">Opportunity</option>
+                                <option value="Oppurtunity">Complaint</option>
+                            </select>
+                            </div>
+
+                            <!-- Message Input -->
+                            <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" placeholder="Your Message Goes Here *" required  ></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button For The Form -->
+                        <div class="col-12 text-center">
+                            <button class="contact-button" type="submit" id="submit" value="submit" role="button"> Send Message </button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+                <div class="row">
+            
+                    <div class="col-md-6 col-sm-12">
+                        <span class="copyright">Alex Machin 2018</span>
+                    </div>
+    
+                    <div class="col-md-6 col-sm-12">
+                        <ul class="social-links">
+                            <li>
+                            <a href="https://www.linkedin.com/in/alex-machin/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            </li>
+                
+                            <li>
+                            <a href="https://github.com/AlexMachin1997">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            </li>
+                
+                            <li>
+                            <a href="https://twitter.com/AlexMachin97">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+    
+    
+      
+  
+

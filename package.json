@@ -1,0 +1,22 @@
+{
+  "name": "static-portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio websites repository, the repository contains all the essential files to get you started with the project as well as a step-by-step guide how to get the project setup in your local environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexMachin1997/Static-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexMachin1997/Static-Portfolio/issues"
+  },
+  "homepage": "https://github.com/AlexMachin1997/Static-Portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
